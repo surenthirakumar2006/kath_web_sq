@@ -1,11 +1,12 @@
 version: '3.8'
 
 services:
-  kathsql:
-    container_name: kathsql
+  flask-app:
     build: .
     ports:
-      - "1002:1002"
+      - "1212:1212"
     volumes:
       - .:/app
+    environment:
+      - FLASK_ENV=development
     restart: always
