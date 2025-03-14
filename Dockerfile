@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir flask sqlite3
 EXPOSE 1002
 
 # Run the app with paramountcy in the background
-CMD ["sh", "-c", "python app.py & tail -f /dev/null"]
+CMD ["sh", "-c", "python app.py --port=1002 & tail -f /dev/null"]
