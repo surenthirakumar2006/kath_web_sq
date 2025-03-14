@@ -11,7 +11,7 @@ WORKDIR /app
 COPY app.py templates/ static/ /app  
 
 # Expose port (Ensure Flask is configured to use this port)
-EXPOSE 1002  
+EXPOSE 1212  
 
 # Run the application properly in foreground
 CMD ["python3", "app.py"]
